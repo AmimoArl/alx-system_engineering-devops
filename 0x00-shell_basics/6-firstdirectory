@@ -1,17 +1,2 @@
 #!/bin/bash
-directory_path="/tmp/my_first_directory
-
-if [ -d "$directory_path" ]; then
-    echo "Directory '$directory_path' already exists."
-else
-    # Create the directory
-    mkdir "$directory_path"
-    
-    # Check if the directory creation was successful
-    if [ $? -eq 0 ]; then
-        echo "Directory '$directory_path' created successfully."
-    else
-        echo "Failed to create directory '$directory_path'."
-    fi
-fi
-"
+mkdir /tmp/my_first_directory
